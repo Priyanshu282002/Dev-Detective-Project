@@ -9,7 +9,7 @@ body{
 }
 
 .wrapper{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: #f6f8ff;
     font-family: 'Space Mono', monospace;
@@ -202,4 +202,67 @@ body{
 
 .errorMessage.active{
     display: flex;
+}
+
+@media screen and (max-width:500px){
+
+    .wrapper{
+        height: 100%;
+    }
+
+    .heading-container{
+        width: 75%;
+        gap: 10px;
+        font-size: 8px;
+    }
+
+    .mode-container{
+        gap: 5px;
+    }
+
+    .searchForm{
+        width: 75%;
+        gap: 5px;
+        font-size: 10px;
+        padding: 0.7rem 0.8rem;
+    }
+    .searchForm img{
+        height: 10px;
+        margin-left: 0.5rem;
+    }
+    .searchForm input{
+        all: unset;
+        width: 80%;
+    }
+    
+    .searchForm input::placeholder{
+        color: #4B6A9B;
+        font-size: 10px;
+    }
+    
+    .btn{   
+        padding: 0.2rem 0.5rem;
+        font-size: 10px;
+    }
+
+    .user-info-container{
+        width: 75%;
+        flex-direction: column;
+        
+    }
+
+    .userImage{
+        height: 50%;
+        border-radius: 100%;
+        object-fit: contain;
+    }
+
+    .name-container{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .loclink{
+        flex-direction: column;
+    }
 }

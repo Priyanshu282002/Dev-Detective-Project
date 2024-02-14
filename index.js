@@ -154,6 +154,7 @@ function renderUserInfo(userData){
     if(userData?.blog=="")
     {
         link.innerText="Not Available";
+        link.href="#";
     }
     else{
         link.innerText=userData?.blog;
@@ -163,6 +164,7 @@ function renderUserInfo(userData){
     if(userData?.twitter_username==null)
     {
         twitter.innerText="Not Available";
+        twitter.href="#";
     }
     else{
         twitter.innerText=userData?.twitter_username;
